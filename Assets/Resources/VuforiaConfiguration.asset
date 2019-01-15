@@ -64,7 +64,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: Intel(R) RealSense(TM) 3D Camera (Front F200) RGB
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30
