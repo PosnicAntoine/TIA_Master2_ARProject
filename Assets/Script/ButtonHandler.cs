@@ -5,17 +5,22 @@ using Vuforia;
 
 public class ButtonHandler : MonoBehaviour , IVirtualButtonEventHandler{
 
-    public GameObject obj;
+    public GameObject objToKinematic;
+    public GameObject buttonToAnimate;
 
-	// Use this for initialization
-	void Start () {
+    private Animator anim;
+
+    // Use this for initialization
+    void Start () {
         VirtualButtonBehaviour[] vbs = GetComponentsInChildren<VirtualButtonBehaviour>();
 
         for (int i = 0; i <vbs.Length; i++)
         {
             vbs[i].RegisterEventHandler(this);
         }
-	}
+
+        anim = buttonToAnimate.GetComponent<Animator>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,7 +30,11 @@ public class ButtonHandler : MonoBehaviour , IVirtualButtonEventHandler{
     public void OnButtonPressed(VirtualButtonBehaviour vb)
     {
         Debug.Log("OnButtonPressed::" + vb.VirtualButtonName);
-        obj.GetComponent<Rigidbody>().isKinematic = false;
+        objToKinematic.GetComponent<Rigidbody>().isKinematic = false;
+
+        anim.SetTrigger("Press");
+        
+        
     }
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
