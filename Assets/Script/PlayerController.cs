@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float strength;
+    public float maxSpeed;
     private Joystick joy;
 
 	// Use this for initialization
@@ -13,11 +14,19 @@ public class PlayerController : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
+        
+    }
+
+    void FixedUpdate() {
         float x = joy.Horizontal;
         float z = joy.Vertical;
 
-        GetComponent<Rigidbody>().AddForce(new Vector3(x, 0, z) * Time.deltaTime * strength);
-
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb.velocity.magnitude < maxSpeed)
+        {
+            rb.AddForce(new Vector3(x, 0, z) * Time.deltaTime * strength);
+        }
     }
 }
