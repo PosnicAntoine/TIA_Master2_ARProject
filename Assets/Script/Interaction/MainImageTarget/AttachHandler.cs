@@ -22,7 +22,11 @@ public class AttachHandler : MonoBehaviour {
         if (mainObj != null)
         {
             for (int i = 0; i < transform.childCount; i++) {
-                Instantiate(transform.GetChild(i).gameObject, mainObj.transform, true);
+                GameObject obj = transform.GetChild(i).gameObject;
+                if(obj.layer != 9)
+                {
+                    Instantiate(obj, mainObj.transform, true);
+                }
             }
         }
 
