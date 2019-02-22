@@ -34,7 +34,7 @@ public class ButtonHandlerMove : MonoBehaviour, IVirtualButtonEventHandler
 
     public void OnButtonPressed(VirtualButtonBehaviour vb)
     {
-        Debug.Log("OnButtonPressed::" + vb.VirtualButtonName);
+        Debug.Log("OnButtonPressed::" + vb.VirtualButtonName + " Animator "+ anim);
         objToMove.GetComponent<Transform>().Translate(this.vectorMovement);
 
         anim.SetTrigger("Press");

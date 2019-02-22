@@ -7,6 +7,7 @@ public class ButtonHandler : MonoBehaviour , IVirtualButtonEventHandler{
 
     public GameObject objToKinematic;
     public GameObject buttonToAnimate;
+    public Vector3 startPosition;
 
     private Animator anim;
 
@@ -31,6 +32,7 @@ public class ButtonHandler : MonoBehaviour , IVirtualButtonEventHandler{
     {
         Debug.Log("OnButtonPressed::" + vb.VirtualButtonName);
         objToKinematic.GetComponent<Rigidbody>().isKinematic = false;
+        objToKinematic.GetComponent<Transform>().position=startPosition;
 
         anim.SetTrigger("Press");
         
