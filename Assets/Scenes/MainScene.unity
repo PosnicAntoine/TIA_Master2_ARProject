@@ -1546,7 +1546,7 @@ GameObject:
   - component: {fileID: 804272238}
   - component: {fileID: 804272237}
   m_Layer: 5
-  m_Name: Point
+  m_Name: PointText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2141,7 +2141,7 @@ GameObject:
   - component: {fileID: 963223715}
   - component: {fileID: 963223714}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: PointPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5907,6 +5907,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1690819550}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1699171514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1262282658492564, guid: 7df9bafe504b33b4b96c2d9c75ce8d26,
+    type: 3}
+  m_PrefabInstance: {fileID: 2108675245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1699171515
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699171514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 22eca42868f30c24ab3c2f251d237633, type: 3}
 --- !u!1 &1707238212
 GameObject:
   m_ObjectHideFlags: 0
@@ -6623,7 +6643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4116826865567872, guid: 452e8cca0720da3449b5d0ea9918bdf1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.006
+      value: -0.056
       objectReference: {fileID: 0}
     - target: {fileID: 4116826865567872, guid: 452e8cca0720da3449b5d0ea9918bdf1, type: 3}
       propertyPath: m_LocalPosition.z
