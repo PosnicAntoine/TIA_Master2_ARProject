@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject endText;
+    public RocketBehavior endRocketAnimation;
+    public int endPoints;
 
     private int points = 0;
     private TextMeshProUGUI pointText;
@@ -27,6 +30,10 @@ public class GameManager : MonoBehaviour
     {
         this.points++;
         this.updatePointText();
+        if (points >= endPoints)
+        {
+            this.end();
+        }
     }
 
     public void setPoint(int i)
@@ -39,4 +46,12 @@ public class GameManager : MonoBehaviour
     {
         pointText.text = this.points.ToString();
     }
+
+
+    private void end()
+    {
+        endRocketAnimation.isFiring = true;
+        endText.SetActive(true);
+    }
+
 }
