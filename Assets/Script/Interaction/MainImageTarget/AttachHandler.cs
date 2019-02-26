@@ -17,7 +17,6 @@ public class AttachHandler : MonoBehaviour {
 
     public void onAttachEvent()
     {
-        Debug.Log("couocu");
         GameObject mainObj = GameObject.Find("MainImageTarget");
         if (mainObj != null)
         {

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -47,11 +48,21 @@ public class GameManager : MonoBehaviour
         pointText.text = this.points.ToString();
     }
 
+    public void openBrowserToGit()
+    {
+        Application.OpenURL("https://github.com/PosnicAntoine/TIA_Master2_ARProject");
+    }
+
+    public void restartScene()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
 
     private void end()
     {
         endRocketAnimation.isFiring = true;
         endText.SetActive(true);
     }
+
 
 }

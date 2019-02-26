@@ -26,7 +26,6 @@ public class RocketBehavior : MonoBehaviour
     {
         if (isFiring)
         {
-            Debug.Log(speed);
             t.Translate(0, speed * Time.deltaTime, 0);
             t.Rotate(0, rotSpeed * Time.deltaTime,0);
 
