@@ -10,15 +10,22 @@ public class RocketBehavior : MonoBehaviour
     public float maxSpeed;
     public float rotAccelleration;
     public float rotnMaxSpeed;
+    public float firingCounter;
+
 
     private Transform t;
     private float speed = 0;
     private float rotSpeed = 0;
-    
+    private float currentCounter = 0;
+
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         t = GetComponent<Transform>();
+        audioSource = this.GetComponent<AudioSource>();
+        audioSource.Stop();
     }
 
     // Update is called once per frame
@@ -26,16 +33,28 @@ public class RocketBehavior : MonoBehaviour
     {
         if (isFiring)
         {
-            t.Translate(0, speed * Time.deltaTime, 0);
-            t.Rotate(0, rotSpeed * Time.deltaTime,0);
-
-            if (speed < maxSpeed)
+            if (!audioSource.isPlaying)
             {
-                speed = speed + (acceleration * Time.deltaTime);
+                audioSource.Play();
             }
-            if (rotSpeed < rotnMaxSpeed)
+
+            if (firingCounter < currentCounter)
             {
-                rotSpeed = rotSpeed + (rotAccelleration * Time.deltaTime);
+                t.Translate(0, speed * Time.deltaTime, 0);
+                t.Rotate(0, rotSpeed * Time.deltaTime, 0);
+
+                if (speed < maxSpeed)
+                {
+                    speed = speed + (acceleration * Time.deltaTime);
+                }
+                if (rotSpeed < rotnMaxSpeed)
+                {
+                    rotSpeed = rotSpeed + (rotAccelleration * Time.deltaTime);
+                }
+            }
+            else
+            {
+                currentCounter = currentCounter + Time.deltaTime;
             }
         }
     }

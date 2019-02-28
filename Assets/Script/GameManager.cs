@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         setDifficulty(difficultySlider.value);
         difficultySlider.transform.parent.gameObject.SetActive(false);
 
-        this.setPoint(0);
+        this.updatePointText();
 
         player.GetComponent<Rigidbody>().isKinematic = false;
         player.GetComponent<Transform>().position = startPosition;

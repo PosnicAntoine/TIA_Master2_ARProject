@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectableBehavior : MonoBehaviour
 {
     private GameManager gameManager;
+    public GameObject hitParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +19,9 @@ public class CollectableBehavior : MonoBehaviour
     {
         if (coll.gameObject.layer == 10)
         {
-            this.gameObject.SetActive(false);
+            Instantiate(hitParticle, transform.position, transform.rotation);
             this.gameManager.addOnePoint();
+            this.gameObject.SetActive(false);
             
         }
     }
