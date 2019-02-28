@@ -42,7 +42,10 @@ In the following image you can appreciate what the UI look like:
 
 *Finally on the main Image Target, the "Astronaut", you'll find a big red Virtual Button. This button once pressed in the real world, will start the game activating le white ball. Pressing it once more will juste reset the ball back to her spawn, without losing your points.
 
-### Elements
+#
+
+
+#### Elements
 
 This is the natural scene:
 ![Scene](https://i.imgur.com/lBrXJuO.jpg)
@@ -51,7 +54,10 @@ The first consist of a pipe blowing you upward, meanwhile the other one provide 
 
 Nothing to fear since those sheeps are pacifist and mind their own buisness, and since Gems are scattered everywhere.
 
-### Mechanics
+#
+
+
+#### Mechanics
 
 * The Highest difficulty ask you to get every gems possibles.
 
@@ -65,10 +71,20 @@ Nothing to fear since those sheeps are pacifist and mind their own buisness, and
 
 * Losing track of th main image target won't screw your game. So you can move everything without fear.
 
-## Walkthrought
+#
+
+#
+
+### Walkthrought
 
 No time to test? Here is a short video showing the app:
 [![Gems Chasing & Sheeps Walkthrought](https://i.imgur.com/fd7LOr1.png)](https://youtu.be/FaUS9jbJ0Sw)
+
+#
+
+#
+
+#
 
 ## Getting Started
 
@@ -77,10 +93,14 @@ No time to test? Here is a short video showing the app:
 * [Printout of standard vuforia Image Targets](https://library.vuforia.com/content/dam/vuforia-library/docs/target_samples/unity/mars_target_images.pdf), these images are used as anchor for the game elements.
 * [A webcam and/or Android device](https://youtu.be/ryoKpCgtwQo?t=12), for capturing Vuforia Image Targets.
 
+#
+
 ### Prerequisite if you want to look at the code:
 
 * [Unity 2018 3.0+ with Vuforia](https://unity3d.com/fr), Dev environnement.
 
+
+#
 
 #
 
@@ -90,9 +110,13 @@ You can either install the [APK](https://github.com/PosnicAntoine/TIA_Master2_AR
 
 #
 
+#
+
 ## External Tools used
 
 Every external tool can be found here:  [/Assets/Imported](https://github.com/PosnicAntoine/TIA_Master2_ARProject/tree/master/Assets/Imported).
+
+#
 
 #
 
