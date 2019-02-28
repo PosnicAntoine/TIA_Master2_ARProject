@@ -28,12 +28,14 @@
 
 Every external tool can be found here:  [/Assets/Imported](https://github.com/PosnicAntoine/TIA_Master2_ARProject/tree/master/Assets/Imported).
 
-### Music:
+#
+
+## Music:
 
 The original soundtrack -Cherry- was made by B1n4ryGD
 Thanks for their licensing Terms I was able to put it in this work.
 
-Find out more at: https://www.newgrounds.com/audio/listen/749684
+Find out more [here](https://www.newgrounds.com/audio/listen/749684)
 
 #
 
