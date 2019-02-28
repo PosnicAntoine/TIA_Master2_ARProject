@@ -1,6 +1,6 @@
 # Gem Chasing & Sheeps: an Augmented Reality mini Game.
 
-![Banner of our game](https://i.imgur.com/7rs7qT3.png)
+![Banner of our game]()
 
 ## Introduction
 
