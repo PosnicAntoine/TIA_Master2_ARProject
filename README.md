@@ -25,7 +25,7 @@ To be able to play you need the "Drone", "Astronaut" and "Fissure" Originals Ima
 In the following image you can appreciate what the UI look like:
 ![Controls](https://i.imgur.com/6DwQOef.png)
 
-* Starting from the top left, we begin with a info button, that will redirect you on this page, in case you need some explanation.
+* Starting from the top left, we begin with an info button, that will redirect you on the web page of the repository, in case you need some explanation.
 
 * Right below you can find the Joystick, that will allow you to control the white ball, so that you can go catch them all! (The gems)
 
@@ -52,7 +52,7 @@ This is the natural scene:
 To get in between those floating island you will need some help. The "Fissure" and "Drone" ImageTarget got everything to help you out.
 The first consist of a pipe blowing you upward, meanwhile the other one provide you a safe bridge to cross in between islands.
 
-Nothing to fear since those sheeps are pacifist and mind their own buisness, and since Gems are scattered everywhere.
+Nothing to fear since those sheeps are pacifist and mind their own buisness, and there is plenty of Gems anyway.
 
 #
 
@@ -61,7 +61,7 @@ Nothing to fear since those sheeps are pacifist and mind their own buisness, and
 
 * The Highest difficulty ask you to get every gems possibles.
 
-* The pipe will make you fly, but also stabilize in the air.
+* The pipe will make you fly, but also stabilize you in the air.
 
 * Sheeps push you around.
 
@@ -90,7 +90,7 @@ No time to test? Here is a short video showing the app:
 
 ### Prerequisites:
 
-* [Printout of standard vuforia Image Targets](https://library.vuforia.com/content/dam/vuforia-library/docs/target_samples/unity/mars_target_images.pdf), these images are used as anchor for the game elements.
+* [Printout of standard vuforia Image Targets](https://library.vuforia.com/content/dam/vuforia-library/docs/target_samples/unity/mars_target_images.pdf), these images are used as anchor for the game elements and virtual buttons (eg they are crucial).
 * [A webcam and/or Android device](https://youtu.be/ryoKpCgtwQo?t=12), for capturing Vuforia Image Targets.
 
 #
