@@ -1884,7 +1884,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 3
   m_WholeNumbers: 1
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9502,7 +9502,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.45277777
+      value: 0.31944445
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -11836,7 +11836,7 @@ PrefabInstance:
     - target: {fileID: 4297604429294877577, guid: 7df9bafe504b33b4b96c2d9c75ce8d26,
         type: 3}
       propertyPath: firingCounter
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8955000914728805437, guid: 7df9bafe504b33b4b96c2d9c75ce8d26,
         type: 3}
