@@ -4,10 +4,16 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject player;
+    public Vector3 startPosition;
+
+    public Slider difficultySlider;
     public GameObject endText;
+
     public RocketBehavior endRocketAnimation;
     public int endPoints;
 
@@ -45,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     public void updatePointText()
     {
-        pointText.text = this.points.ToString();
+        pointText.text = this.points.ToString() + "/" +this.endPoints;
     }
 
     public void openBrowserToGit()
@@ -56,6 +62,41 @@ public class GameManager : MonoBehaviour
     public void restartScene()
     {
         SceneManager.LoadScene("MainScene");
+    }
+
+    public void begin()
+    {
+        setDifficulty(difficultySlider.value);
+        difficultySlider.transform.parent.gameObject.SetActive(false);
+
+        this.setPoint(0);
+
+        player.GetComponent<Rigidbody>().isKinematic = false;
+        player.GetComponent<Transform>().position = startPosition;
+    }
+
+    private void setDifficulty(float value)
+    {
+        if (value <= 0)
+        {
+            this.endPoints = 5;
+        }
+        else if(value <= 1)
+        {
+            this.endPoints = 8;
+        }
+        else if(value <= 2)
+        {
+            this.endPoints = 14;
+        }
+        else if(value <= 3)
+        {
+            this.endPoints = 19;
+        }
+        else
+        {
+            this.endPoints = 4;
+        }
     }
 
     private void end()

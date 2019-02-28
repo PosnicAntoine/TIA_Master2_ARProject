@@ -5,9 +5,9 @@ using Vuforia;
 
 public class ButtonHandler : MonoBehaviour , IVirtualButtonEventHandler{
 
-    public GameObject objToKinematic;
+
+    public GameManager gameManager;
     public GameObject buttonToAnimate;
-    public Vector3 startPosition;
 
     private Animator anim;
 
@@ -31,9 +31,7 @@ public class ButtonHandler : MonoBehaviour , IVirtualButtonEventHandler{
     public void OnButtonPressed(VirtualButtonBehaviour vb)
     {
         Debug.Log("OnButtonPressed::" + vb.VirtualButtonName);
-        objToKinematic.GetComponent<Rigidbody>().isKinematic = false;
-        objToKinematic.GetComponent<Transform>().position=startPosition;
-
+        gameManager.begin();
         anim.SetTrigger("Press");
         
         
